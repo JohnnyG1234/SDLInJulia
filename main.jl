@@ -47,6 +47,9 @@ try
                 elseif scan_code == SDL_SCANCODE_D || scan_code == SDL_SCANCODE_RIGHT
                     x += speed / 30
                     break
+                elseif scan_code == SDL_SCANCODE_ESCAPE
+                    close = true
+                    break
                 else
                     break
                 end
